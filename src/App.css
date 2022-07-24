@@ -1,8 +1,6 @@
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
-
-html,
-body{
-
+html, body, #root, .App {
+  height: 100%;
 }
 
 .MultipleChoiceQ{
@@ -17,8 +15,9 @@ header{
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
-  align-items: center;
+  position: relative;
   justify-content: center;
+  text-align: center;
   background-color: #5e86f3;
 }
 
@@ -29,11 +28,12 @@ header{
   background-color: #5e86f3;
   color: #000;
   padding-left: 10px;
+  position: absolute;
 }
 
 /* 이거 가운데 정렬 대체 어떻게 하는 건데 .. .  .  . . . Hㅑㅑㅑ */
 header .head_text{
-  padding-left: 10px;
+  position: relative;
   width: 100vw;
   color:white;
   font-weight: 500;
@@ -85,6 +85,7 @@ header .head_text{
   text-align: left;
 }
 
+/* Submit */
 .submit_container {
   height: 170px;
   display: flex;
@@ -94,5 +95,59 @@ header .head_text{
 
 .submit {
   width: 90%;
-  height: 35px;
+  height: 40px;
+  border: 1px solid gray;
+}
+
+/* Correct */
+.row_dircetion_div {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+}
+
+.skip {
+  width: 50%;
+  background-color: #515768;
+  color: "white"; 
+  /* 글씨 흰색으로 왜 안 변훼에에에ㅔ엑 ㅠㅠ.ㅠㅠ */
+  font-weight: 400;
+}
+
+.retry {
+  width: 50%;
+  background-color: #5e86f3;
+  color: 'white'
+}
+
+/* complete */
+.completeContainer {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completeImg {
+  display: flex;
+  width: 100%;
+  border-radius: 30px;
+}
+.subInfo {
+  color: rgb(180, 180, 180);
+  font-weight: 400;
+}
+.complete_button {
+  width: 60%;
+  height: 5%;
+  border-radius: 20px;
+  background-color: #12338f;
+}
+.complete_button_text {
+  color: 'white';
+  font-size: 20px;
 }
