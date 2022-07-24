@@ -86,8 +86,15 @@ header .head_text{
 }
 
 /* Submit */
+.submit_total_container {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
 .submit_container {
-  height: 170px;
+  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
